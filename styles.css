@@ -1,0 +1,147 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1b1b1b;
+    line-height: 1.6;
+  }
+  
+  /* Landing Page */
+  .landing-page {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1563530167873-910a2ae3773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80') 
+      no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    animation: bounce 2s infinite;
+  }
+  
+  .scroll-indicator span {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .scroll-indicator .arrow {
+    margin: 5px auto;
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Journey Section */
+  .journey-section {
+    padding: 20px;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  .journey-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .journey-step img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .next-step {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Sanctum Section */
+  .sanctum-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: #1b1b1b;
+  }
+  
+  .sanctum-interactive {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .bell {
+    width: 50px;
+    height: 50px;
+    background: url('bell.png') no-repeat center/contain;
+    animation: swing 2s infinite;
+  }
+  
+  .diya {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .diya.lit {
+    background: url('diya_on.png') no-repeat center/contain;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #ccc;
+  }
+  

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaishno Devi Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="landing-page" style="background-image: url('dsc_6549_copy_2.jpeg');">
+    <header>
+      <h1>Welcome to Vaishno Devi</h1>
+      <p>Experience the divine journey through the Trikuta Mountains.</p>
+    </header>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="arrow"></div>
+    </div>
+  </div>
+
+  <div class="journey-section">
+    <h2>Journey to the Holy Shrine</h2>
+    <div class="journey-step" id="step1">
+      <img src="360_F_202217738_ALDbPJUFjPcwBNbYBPd8bXmkAjE2UvfV.jpg" alt="Katra">
+      <p><h3>Ek Trip ki Kahani - Katra to Vaishno Devi</h3>
+
+        <b>Are Kratakshi, sun na, mai tujhe apni Vaishno Devi ki trip ke baare me btata ho. Ab soch, humara trip start hota hai Katra se. Subah-subah hum station pe Pauche, aur vha ka mahol hi alag tha. Har taraf log hi log, sab apne mn me ek alag energy ke saath aaye the. Sabke mn me ek hi maqsad tha - Mata Rani ka darshan!</p>
+
+        <br>
+        <br>
+        <p>Humne sabse phle apne bags locker me rakhe aur ekdum light feel kiya. Fir humne ek choti si chai ki dukaan se chai aur bun-maska khaya. Are wahh Kratakshi, vha ki chai ka taste abhi bhi yaad hai, ekdum kadak aur full energy wali! <br> Chlo, fir shuru hua humara safar. Pahadon ke raste, thoda uphill, thoda smooth. Pehle toh sab theek lag raha tha, par jaise hi raste me vo steep chadhai aayi na, saans phoolne lg gyi. Pr jab neeche dekha, toh pura Katra ekdum chhota lag raha tha, aur vha ki view, uff! Ek taraf nature ke sundar scene aur doosri taraf logon ka "Jai Mata Di" ka jaikara - ekdum goosebumps de diya! </b></p>
+        <br><br><br>
+
+
+
+
+
+
+
+      <p>Step 1: Begin your trek from Katra, a small town full of bustling energy.</p> 
+      <button class="next-step" id="1">Next Step</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="journey-step hidden" id="step2">
+        <img src="Banganga_(Shri_Mata_Vaishno_Devi).jpg" alt="Trail">
+        <p><b>Raste me humne ek spot pe ruk ke prasad liya aur thoda refresh hue. vha ek cute si dukaan thi jahan se maine ek maala aur ek chota sa lock toh kharid hi liya. Tujhe pata hai, log vha pe apne mann ke wish ko lock krte hai, aur vo maala unki wish puri hone ki dua deta hai. <br><br>
+
+            Fir shaam hote-hote hum Bhawan ke paas pahuche. Vha ka mahaul na, ekdum divine! Pehle darshan ke liye line me lage, thoda time lga, par jab andar pahuche na, bas mann ekdum shant ho gaya. Mata Rani ke darshan karte hi saare thakan khtam ho gyi.</b></p>
+
+
+
+
+
+
+
+        <br><br><br>
+      <p>Step 2: Ascend through lush green trails and scenic views.</p>
+      <button class="next-step" onclick="nextStep(3)">Next Step</button>
+    </div>
+    <div class="journey-step hidden" id="step3">
+      <img src="Slide_01.png" alt="Temple">
+      <div class="bell" onclick="playBell()">🔔</div>
+<audio id="bellSound" src="bell.mp3"></audio>
+    </div>
+  </div>
+
+    
+    
+      
+
+  <footer>
+    <h3>About Vaishno Devi</h3>
+    <p>
+      Vaishno Devi is one of the most revered pilgrimage destinations in India, located in Jammu and Kashmir. 
+      The holy cave is visited by millions seeking spiritual solace.
+    </p>
+    <a href="https://www.maavaishnodevi.org/" target="_blank">Official Website</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+  // Scroll to Step 1 when the arrow is clicked
+document.querySelector('.arrow').addEventListener('click', () => {
+  document.getElementById('step1').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+// Scroll to Step 2 when the "Next Step" button in Step 1 is clicked
+document.querySelector('#step1 .next-step').addEventListener('click', () => {
+  document.getElementById('step2').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+// Scroll to Step 3 when the "Next Step" button in Step 2 is clicked
+document.querySelector('#step2 .next-step').addEventListener('click', () => {
+  document.getElementById('step3').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+
+function playBell() {
+  const bellSound = document.getElementById('bellSound');
+  bellSound.currentTime = 0; // Reset the audio to start from the beginning
+  bellSound.play();
+}
+  
+
+  </script>
+</body>
+</html>
